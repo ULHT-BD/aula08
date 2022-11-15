@@ -92,19 +92,42 @@ Para cada uma das alíneas seguintes, escreva a query que permite obter:
 4. Utilize a vista anterior para obter a lista de JOB_ID e salários médios para as funções cujo salário médio é superior a 10000.
 
 ## 2. Indexes
-.
+A criação de índices permite adicionar estruturas auxiliares que permitem otimizar a performance da execução das queries na base de dados. Podemos ter índices primários ou índices secundários.
+Para verificar os índices de uma tabela podemos usar
+
 ``` sql
+SHOW INDEX FROM tabela;
+```
+Um índice pode ser criado sobre um ou vários atributos, para criar um índice numa relação usamos a sintaxe:
+``` sql
+CREATE INDEX indice_nome ON tabela (atributos);
+```
+
+Por exemplo para criar um índice sobre o nif de um aluno, faríamos:
+``` sql
+CREATE INDEX ix_nifaluno ON aluno (nif);
+```
+
+Neste caso, sabemos que o nif é único para cada aluno e podemos adicionar essa restrição ao índice:
+``` sql
+CREATE UNIQUE INDEX ix_nifaluno ON aluno (nif);
+```
+
+Podemos apagar um índice utilizando a sintaxe:
+``` sql
+DROP INDEX ix_nifaluno ON aluno;
 ```
 
 ### Exercícios
-Qual o tipo de dados que utilizaria para representar:
-1. Nome próprio e apelido
-2. NIF, cartao do cidadão, telefone ou código postal
-3. Idade, salário, data de nascimento
-4. 
+Para cada uma das alíneas seguintes, escreva a query que permite obter:
+1. Quais os índices da tabela employees
+2. Adicione um índice para o telefone de empregados e volte a verificar os índices existentes
+3. Remova o índice que adicionou no ponto anterior
+
 
 ## 3. Trabalho de Casa
 (a publicar)
+Utilize o SHOW PROFILES para verificar o aumento da performance de execução.
 
 Bom trabalho!
 
