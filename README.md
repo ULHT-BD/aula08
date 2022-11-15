@@ -120,7 +120,7 @@ DROP INDEX ix_nifaluno ON aluno;
 
 ### Exercícios
 Para cada uma das alíneas seguintes, escreva a query que permite obter:
-1. Quais os índices da tabela employees
+1. Quais os índices da tabela employees e os vários atributos (tipo de índice, sequência, etc)
 2. Adicione um índice para o telefone de empregados e volte a verificar os índices existentes
 3. Remova o índice que adicionou no ponto anterior
 
