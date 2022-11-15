@@ -84,6 +84,12 @@ Exemplo:
 DROP VIEW v_estudante_aprovado;
 ```
 
+### Exercícios
+Para cada uma das alíneas seguintes, escreva a query que permite obter:
+1. Uma vista para os empregados onde é possivel ter acesso ao id, primeiro nome, último nome e salário (incluindo comissão quando existe)
+2. Atualize a comissão do empregado cujo id é 100 para 25%. Consulte a vista e verifique a alteração do resultado na vista.
+3. Crie uma vista v_job que permite obter os valores mínimo, médio e máximo do salário de cada função (JOB_ID)
+4. Utilize a vista anterior para obter a lista de JOB_ID e salários médios para as funções cujo salário médio é superior a 10000.
 
 ## 2. Indexes
 .
