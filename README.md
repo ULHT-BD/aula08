@@ -56,7 +56,7 @@ Apesar de não ser obrigatório, é comum distinguir as vistas com um prefixo po
 Por exemplo podemos partir da relação estudante(numero, nome, nota_teorica, nota_pratica) e construir uma relação que mostra apenas o número e a nota final dos alunos aprovados:
 ``` sql
 CREATE VIEW v_estudante_aprovado AS
-SELECT numero, nota_teorica + nota_pratica as nota_final
+SELECT numero, 0.5*nota_teorica + 0.5*nota_pratica as nota_final
 FROM estudante
 WHERE nota_teorica > 9.5 and + nota_pratica > 9.5;
 ```
