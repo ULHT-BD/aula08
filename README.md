@@ -152,6 +152,7 @@ Precisa agora de criar uma nova ligação (ou atualizar a antiga) para ligar à 
 3. Os sistemas de Gestão de Base de Dados oferecem ferramentas de profiling que permitem medir a performance de execucao das queries. Neste trabalho iremos usar o profiler do MySQL para medir o tempo de execução de uma query antes e depois da criação de um índice de forma a verificar o ganho de performance. Active o profiler no MySQL usando a instrução para alterar a flag e iniciar a medição de performance nas queries seguintes:
 ``` sql
 SET profiling=1;
+flush status;
 ```
 
 nota: o ```show profiles``` é o método mais antigo para profiling das queries mas que vamos usar aqui por ser mais simples. Será futuramente substituido pelo Performance Schema (incluí um mesmo exemplo com show profiles e performance schema no repositório para quem esteja interessado).
