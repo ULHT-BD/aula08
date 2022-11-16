@@ -155,7 +155,7 @@ SET profiling=1;
 flush status;
 ```
 
-nota: o ```show profiles``` é o método mais antigo para profiling das queries mas que vamos usar aqui por ser mais simples. Será futuramente substituido pelo Performance Schema (incluí um mesmo exemplo com show profiles e performance schema no repositório para quem esteja interessado).
+nota: o ```show profiles``` é o método mais antigo para profiling das queries mas que vamos usar aqui por ser mais simples. Será futuramente substituido pelo Performance Schema (incluí um mesmo exemplo com [show profiles](https://github.com/ULHT-BD/aula08/blob/main/Profiling_ShowProfiles.sql) e [performance schema](https://github.com/ULHT-BD/aula08/blob/main/Profiling_PerformanceSchema.sql) sobre uma [bd exemplo](https://github.com/ULHT-BD/aula08/blob/main/Profiling_SetupDB.sql) no repositório para quem esteja interessado).
 
 4. Para testar a performance vamos usar a query
 ``` sql
