@@ -127,7 +127,16 @@ Para cada uma das alíneas seguintes, escreva a query que permite obter:
 
 ## 3. Trabalho de Casa
 (a publicar)
-Utilize o SHOW PROFILES para verificar o aumento da performance de execução.
+<!-- 
+Neste trabalho de casa irá começar a utilizar e a trabalhar na base de dados do projeto de base de dados. Comece por descarregar e examinar o [enunciado](https://moodle.ensinolusofona.pt/mod/resource/view.php?id=143098) do projeto e os respetivos [ficheiros de dados](https://moodle.ensinolusofona.pt/mod/resource/view.php?id=143097).
+1. Comece por criar a tabela load_people de acordo com o esquema indicado no enunciado
+2. Carregue os dados utilizando a função import data no dbeaver e mapeando para a respetivas colunas
+3. Ative o profiling
+4. Execute a query sobre a tabela e verifique o tempo de execução
+5. Crie o índice sobre o atributo id
+6. Execute novamente a query e verifique a redução no tempo de execução de forma a observar a melhoria que o índice introduziu.
+Extra: No projeto terá de efetuar os passos 1 e 2 para os restantes ficheiros de dados pelo que deve criar as relações e carregar os dados.
+-->
 
 Bom trabalho!
 
