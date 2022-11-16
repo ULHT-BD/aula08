@@ -178,7 +178,7 @@ SHOW profiles;
 
 Verifique o tempo de execução da query antes e depois do indice de forma a observar a melhoria que o índice introduziu. 
 
-Extra: Adicione os índices pedidos nas restantes relações.
+Adicione os índices pedidos nas restantes relações.
 
 
 Bom trabalho!
