@@ -183,7 +183,7 @@ Extra: Adicione os índices pedidos nas restantes relações.
 
 Bom trabalho!
 
-NOTA: submeta a sua resposta ao trabalho de casa no moodle, um exercício por linha, num ficheiro de texto com o nome TPC_a08_[N_ALUNO].sql (exemplo: TPC_a08_12345.sql para o aluno número 12345).
+NOTA: submeta a sua resposta ao trabalho de casa no moodle contendo a criação de base de dados, tabelas e índices num script sql. O ficheiro de texto com o nome TPC_a08_[N_ALUNO].sql (exemplo: TPC_a08_12345.sql para o aluno número 12345).
 
 
 ## Bibliografia e Referências
