@@ -126,12 +126,31 @@ Para cada uma das alíneas seguintes, escreva a query que permite obter:
 
 
 ## 3. Trabalho de Casa
-(a publicar)
-<!-- 
+<!--
 Neste trabalho de casa irá começar a utilizar e a trabalhar na base de dados do projeto de base de dados. Comece por descarregar e examinar o [enunciado](https://moodle.ensinolusofona.pt/mod/resource/view.php?id=143098) do projeto e os respetivos [ficheiros de dados](https://moodle.ensinolusofona.pt/mod/resource/view.php?id=143097).
-1. Comece por criar a tabela load_people de acordo com o esquema indicado no enunciado
-2. Carregue os dados utilizando a função import data no dbeaver e mapeando para a respetivas colunas
-3. Ative o profiling
+
+0. (opcional) Caso tenha tido dificuldade a criar uma nova base de dados no trabalho de casa da aula anterior, poderá dar a volta ao problema criando um novo container baseado na imagem db que criou na aula03 com novo mapping do port 3307
+
+``` sh
+docker run --name mysgbd_novo -p 3307:3306 -d db
+```
+
+Precisa agora de criar uma nova ligação (ou atualizar a antiga) para ligar à instância de MariaDB do container que acabou de criar.
+<img width="1007" alt="image" src="https://user-images.githubusercontent.com/32137262/193685274-c7175ac4-881a-4b59-b019-273713ca8633.png">
+* host: ```localhost```
+* port: ```3307```
+* user: ```admin```
+* password: ```admin```
+
+<img width="680" alt="image" src="https://user-images.githubusercontent.com/32137262/202258030-d9e452f7-4cde-4aa3-b42f-a403d59e80cc.png">
+
+1. Comece por criar a base de dados deisiflix e as tabelas load_movies, load_people, load_genres e load_voting correspondentes conforme o esquema apresentado no enunciado.
+![image](https://user-images.githubusercontent.com/32137262/202258325-537b56a6-16eb-4d48-b224-73e4025a2ad6.png)
+
+2. Carregue os dados utilizando a função import data no dbeaver carregando cada ficheiro de dados na tabela respetiva e mapeando as respetivas colunas. Confirme o correto carregamento dos dados.
+<img width="353" alt="image" src="https://user-images.githubusercontent.com/32137262/202258869-122d343b-9024-4920-aaff-ef54e06c0ea8.png">
+
+3. Os sistemas de Gestão de Base de Dados oferecem ferramentas de profiling que permitem medir a performance de execucao das queries.
 4. Execute a query sobre a tabela e verifique o tempo de execução
 5. Crie o índice sobre o atributo id
 6. Execute novamente a query e verifique a redução no tempo de execução de forma a observar a melhoria que o índice introduziu.
