@@ -126,7 +126,6 @@ Para cada uma das alíneas seguintes, escreva a query que permite obter:
 
 
 ## 3. Trabalho de Casa
-<!--
 Neste trabalho de casa irá começar a utilizar e a trabalhar na base de dados do projeto de base de dados. Comece por descarregar e examinar o [enunciado](https://moodle.ensinolusofona.pt/mod/resource/view.php?id=143098) do projeto e os respetivos [ficheiros de dados](https://moodle.ensinolusofona.pt/mod/resource/view.php?id=143097).
 
 0. (opcional) Caso tenha tido dificuldade a criar uma nova base de dados no trabalho de casa da aula anterior, poderá dar a volta ao problema criando um novo container baseado na imagem db que criou na aula03 com novo mapping do port 3307
@@ -150,12 +149,36 @@ Precisa agora de criar uma nova ligação (ou atualizar a antiga) para ligar à 
 2. Carregue os dados utilizando a função import data no dbeaver carregando cada ficheiro de dados na tabela respetiva e mapeando as respetivas colunas. Confirme o correto carregamento dos dados.
 <img width="353" alt="image" src="https://user-images.githubusercontent.com/32137262/202258869-122d343b-9024-4920-aaff-ef54e06c0ea8.png">
 
-3. Os sistemas de Gestão de Base de Dados oferecem ferramentas de profiling que permitem medir a performance de execucao das queries.
-4. Execute a query sobre a tabela e verifique o tempo de execução
-5. Crie o índice sobre o atributo id
-6. Execute novamente a query e verifique a redução no tempo de execução de forma a observar a melhoria que o índice introduziu.
-Extra: No projeto terá de efetuar os passos 1 e 2 para os restantes ficheiros de dados pelo que deve criar as relações e carregar os dados.
--->
+3. Os sistemas de Gestão de Base de Dados oferecem ferramentas de profiling que permitem medir a performance de execucao das queries. Neste trabalho iremos usar o profiler do MySQL para medir o tempo de execução de uma query antes e depois da criação de um índice de forma a verificar o ganho de performance. Active o profiler no MySQL usando a instrução para alterar a flag e iniciar a medição de performance nas queries seguintes:
+``` sql
+SET profiling=1;
+```
+
+nota: o ```show profiles``` é o método mais antigo para profiling das queries mas que vamos usar aqui por ser mais simples. Será futuramente substituido pelo Performance Schema (incluí um mesmo exemplo com show profiles e performance schema no repositório para quem esteja interessado).
+
+4. Para testar a performance vamos usar a query
+``` sql
+SELECT sql_no_cache * 
+FROM load_genres lg 
+WHERE id_movie >400000 
+ORDER BY id_movie DESC LIMIT 5;
+```
+
+nota: sql_no_cache permite garantir que não há otimização pelo MariaDB através da utilização de resultados desta query em cache
+
+5. Crie um índice sobre o atributo movie_id
+
+6. Execute novamente a mesma query
+
+7. Utilize o comando:
+``` sql
+SHOW profiles;
+```
+
+Verifique o tempo de execução da query antes e depois do indice de forma a observar a melhoria que o índice introduziu. 
+
+Extra: Adicione os índices pedidos nas restantes relações.
+
 
 Bom trabalho!
 
