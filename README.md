@@ -189,7 +189,8 @@ NOTA: submeta a sua resposta ao trabalho de casa no moodle contendo a criação 
 
 
 ## 4. Resoluções
-[Resolução dos exercícios em aula](#)
+[Resolução dos exercícios em aula](https://github.com/ULHT-BD/aula08/blob/main/aula08_resolucao.sql)
+
 [Resolução do trabalho de casa](#)
 
 ## Bibliografia e Referências
