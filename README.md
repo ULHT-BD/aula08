@@ -10,6 +10,8 @@ Bom trabalho!
 
 [3. Trabalho de Casa](#3-trabalho-de-casa)
 
+[4. Resoluções](#4-resoluções)
+
 [Bibliografia e Referências](#bibliografia-e-referências)
 
 [Outros](#outros)
@@ -185,6 +187,10 @@ Bom trabalho!
 
 NOTA: submeta a sua resposta ao trabalho de casa no moodle contendo a criação de base de dados, tabelas e índices num script sql. O ficheiro de texto com o nome TPC_a08_[N_ALUNO].sql (exemplo: TPC_a08_12345.sql para o aluno número 12345).
 
+
+## 4. Resoluções
+[Resolução dos exercícios em aula](#)
+[Resolução do trabalho de casa](#)
 
 ## Bibliografia e Referências
 * [mysqltutorial - CREATE TABLE](https://www.mysqltutorial.org/mysql-create-table/)
