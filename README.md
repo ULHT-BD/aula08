@@ -140,7 +140,7 @@ Precisa agora de criar uma nova ligação (ou atualizar a antiga) para ligar à 
 <img width="1007" alt="image" src="https://user-images.githubusercontent.com/32137262/193685274-c7175ac4-881a-4b59-b019-273713ca8633.png">
 * host: ```localhost```
 * port: ```3307```
-* user: ```admin```
+* user: ```root```
 * password: ```admin```
 
 <img width="680" alt="image" src="https://user-images.githubusercontent.com/32137262/202258030-d9e452f7-4cde-4aa3-b42f-a403d59e80cc.png">
