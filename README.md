@@ -191,7 +191,7 @@ NOTA: submeta a sua resposta ao trabalho de casa no moodle contendo a criação 
 ## 4. Resoluções
 [Resolução dos exercícios em aula](https://github.com/ULHT-BD/aula08/blob/main/aula08_resolucao.sql)
 
-[Resolução do trabalho de casa](#)
+[Resolução do trabalho de casa](https://github.com/ULHT-BD/aula08/blob/main/tpc_a08_resolucao.sql)
 
 ## Bibliografia e Referências
 * [mysqltutorial - CREATE TABLE](https://www.mysqltutorial.org/mysql-create-table/)
