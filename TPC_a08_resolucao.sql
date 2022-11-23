@@ -13,7 +13,7 @@ CREATE TABLE load_genres (
   id_movie int
 );
 
--- load dos ficheiros de dados pelo interface dbeaver ou usando o comando load data
+-- load dos ficheiros de dados pelo interface dbeaver (veja as notas no trabalho de casa da aula9 se obteve erros) ou usando o comando load data
 
 LOAD DATA LOCAL INFILE 'deisi_genre.txt' 
 INTO TABLE load_genre FIELDS 
