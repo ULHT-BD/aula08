@@ -1,6 +1,12 @@
+-- create new database (check aula9 homework if you have user permission related problems)
+
 CREATE DATABASE deisiflix;
 
+-- select database deisiflix
+
 USE deisiflix;
+
+-- create table load_genres
 
 CREATE TABLE load_genres (
   name varchar(50),
